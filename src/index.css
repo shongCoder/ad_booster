@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff")
+    format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff")
+    format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+    format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Pretendard", sans-serif !important;
+    font-weight: 400;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* 기본 리스트 스타일 제거 */
+}
+
+/* 기본 ol 스타일 */
+ol {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    counter-reset: list-counter; /* 카운터 초기화 */
+}
+
+/* li 스타일 */
+ol li {
+    position: relative;
+    padding-left: 2.25rem; /* 불릿과 텍스트 간격 */
+    margin-bottom: 0.8rem; /* 리스트 항목 간격 */
+    counter-increment: list-counter; /* 자동 번호 증가 */
+}
+
+/* li 앞에 불릿(번호) 스타일 */
+ol li::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px; /* 원 크기 (고정 24px) */
+    height: 24px;
+    background-color: #c1c1c1; /* 회색 배경 */
+    color: white; /* 흰색 숫자 */
+    font-weight: 700; /* Bold (폰트 두께 700) */
+    font-size: 16px; /* 숫자 크기 (24px 원에 맞게 조정) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* 원형 */
+    line-height: 1; /* 숫자 정렬 */
+}
