@@ -1,6 +1,10 @@
+import MainComponent from "../components/MainComponent.jsx";
+
 function MainPage() {
     return (
-        <div></div>
+        <div>
+            <MainComponent />
+        </div>
     );
 }
 

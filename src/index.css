@@ -51,8 +51,12 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+    transform: translateZ(0); /* GPU 계층 통일 */
+    backface-visibility: hidden;
 }
 
 body {

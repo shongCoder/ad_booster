@@ -6,10 +6,10 @@ export default {
       colors: {
         adb_purple: "#00217B",
         adb_menu: "#666666",
-        adb_text: "#7D8A9F",
-        adb_black: "#1C1F33",
+        adb_text: "#898D99",
+        adb_black: "#1A202F",
         adb_gray: "#F1F1F1",
-        adb_light_gray: "#F7F7F7",
+        adb_light_gray: "#FAFBFF",
         adb_sodomy: "#2E3C52",
         adb_blue: "#1956FE",
         adb_white: "#FFFFFF",
