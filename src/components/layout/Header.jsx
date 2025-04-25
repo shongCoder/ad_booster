@@ -8,7 +8,7 @@ const Header = ({ activeSection }) => {
   };
 
   return (
-    <div className="lg:h-20 fixed top-0 left-0 w-full z-50 h-[3.5rem] bg-adb_white opacity-95">
+    <div className="lg:h-20 fixed top-0 left-0 w-full z-50 h-[3.5rem] bg-[rgba(255,255,255,0.6)] backdrop-blur-lg">
       <div className="lg:px-[6.25rem] md:px-8 px-5 text-adb_menu flex h-full items-center justify-between">
         {/* 로고 */}
         <div className="lg:w-[8.75rem] md:w-[9.125rem] w-[8rem]">
