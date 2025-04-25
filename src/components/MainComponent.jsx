@@ -1,6 +1,20 @@
+import Carousel from "./common/Carousel.jsx";
+
 function MainComponent() {
 
-    console.log("MainComponent");
+    const items = [
+        { image: './img/main/carousel/carousel1.png', label: '엔터테인먼트' },
+        { image: './img/main/carousel/carousel2.png', label: '생산성' },
+        { image: './img/main/carousel/carousel3.png', label: '유틸리티' },
+        { image: './img/main/carousel/carousel4.png', label: '라이프스타일' },
+        { image: './img/main/carousel/carousel5.png', label: '게임' },
+        { image: './img/main/carousel/carousel6.png', label: '금융' },
+        { image: './img/main/carousel/carousel7.png', label: '라이프스타일' },
+        { image: './img/main/carousel/carousel8.png', label: '엔터테인먼트' },
+        { image: './img/main/carousel/carousel9.png', label: '생산성' },
+        { image: './img/main/carousel/carousel10.png', label: '여행' },
+        { image: './img/main/carousel/carousel11.png', label: '도서' },
+    ];
 
     return (
         <div>
@@ -67,9 +81,10 @@ function MainComponent() {
                         </div>
                     </div>
                 </div>
+                {/* About Title */}
 
-                <div className="w-full flex flex-col justify-center items-center md:px-8 px-5">
-                    <div className="lg:w-[70rem] md:w-full w-full">
+                <div className="w-full flex flex-col justify-center items-center mb-20 md:px-8 px-5">
+                    <div className="lg:w-[70rem] md:w-full w -full">
                         <div className="flex gap-5 w-full mb-5">
                             <div className="flex-1 flex justify-between flex-col h-[21.25rem] p-8 rounded-[1.25rem] bg-gradient-to-br from-[#275CFD] to-[#3A40FE] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                                 <p className="text-[#C8C8C8] font-play font-bold tracking-[0.12rem]">APP GROWTH KEYWORD</p>
@@ -133,6 +148,99 @@ function MainComponent() {
                         </div>
                     </div>
                 </div>
+                {/* About contents */}
+
+                <div className="w-full flex flex-col justify-center items-center md:pt-[3.75rem] pt-10 md:px-8 px-5">
+                    <div
+                        id="curriculum"
+                        className="lg:w-[70rem] md:w-full w-full"
+                    >
+                        <div className="flex md:justify-between md:flex-row flex-col md:items-end items-start">
+                            <div>
+                                <p className="text-adb_blue md:text-[0.875rem] text-[0.75rem] font-extrabold tracking-widest">
+                                    SUCCESS STORY
+                                </p>
+                                <div className="font-bold md:text-[2.25rem] text-[1.5rem] text-adb_black mt-3">
+                                    <p>
+                                        지금 필요한 건,
+                                    </p>
+                                    <p>
+                                        확실한 상위 노출입니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="md:text-right text-left text-adb_text md:text-[1rem] text-[0.8125rem] font-medium">
+                                <p>이제는 '보장된' 성과를 경험할 차례입니다.</p>
+                                <p>상위 랭킹까지. 결과로 증명합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Success Story Title */}
+
+                <div className="w-full flex flex-col justify-center items-center mb-20 md:pt-[3.75rem] pt-10 md:px-8 px-5">
+                    <div className="lg:w-[70rem] md:w-full w-full border border-adb_gray py-7 px-6 rounded-[1rem]">
+                        <p className="text-[1.5rem] font-bold text-adb_purple mb-7">애드부스터 성공 케이스</p>
+                        <div className="flex">
+                            <div className="p-4 flex-1">
+                                <div className="w-full h-[13.75rem] mb-6">
+                                    <img src="./img/main/case1.png" className="cover" />
+                                </div>
+                                <div>
+                                    <p className="text-adb_text font-semibold">운세어플 &#183; 소개팅 &#183; 채팅</p>
+                                    <p className="text-adb_black text-[1.25rem] font-bold mt-2 mb-3">4위 랭크</p>
+                                    <p className="text-adb_text">2023년 12월 97위 &#8594; 2025년 3월 4위 랭크</p>
+                                </div>
+                            </div>
+                            <div className="p-4 flex-1">
+                                <div className="w-full h-[13.75rem] mb-6">
+                                    <img src="./img/main/case2.png" className="cover" />
+                                </div>
+                                <div>
+                                    <p className="text-adb_text font-semibold">코인거래 &#183; 금융거래 &#183; 해외거래소</p>
+                                    <p className="text-adb_black text-[1.25rem] font-bold mt-2 mb-3">5위 랭크</p>
+                                    <p className="text-adb_text">2024년 2월 211위 &#8594; 2025년 3월 5위 랭크</p>
+                                </div>
+                            </div>
+                            <div className="p-4 flex-1">
+                                <div className="w-full h-[13.75rem] mb-6">
+                                    <img src="./img/main/case3.png" className="cover" />
+                                </div>
+                                <div>
+                                    <p className="text-adb_text font-semibold">게임 &#183; 유틸 &#183; 커뮤니티</p>
+                                    <p className="text-adb_black text-[1.25rem] font-bold mt-2 mb-3">3위 랭크</p>
+                                    <p className="text-adb_text">2024년 5월 163위 &#8594; 2025년 3월 3위 랭크</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {/* Success Story Contents */}
+
+                <div className="py-10">
+                    <Carousel items={items} />
+                </div>
+                {/* Carousel */}
+
+                <div className="w-full flex flex-col justify-center items-center md:py-[3.75rem] py-10 md:px-8 px-5 bg-[url('/img/main/gradient.png')] bg-cover bg-center bg-no-repeat">
+                    <div className="lg:w-[70rem] md:w-full w-full">
+                        <div className="font-play text-center font-black text-[2.5rem] text-adb_black transform scale-y-95 mb-3">
+                            <p>Easily top-ranked</p>
+                            <p>in App Store & Google Play</p>
+                        </div>
+                        <p className="text-adb_text text-center">App Store/Google Play의 모든 검색 결과에서 상단에 위치한 앱을 쉽게 찾을 수 있습니다.</p>
+                    </div>
+                    <button
+                        className="px-5 mt-10 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple md:rounded-3xl rounded-3xl font-bold whitespace-nowrap flex items-center justify-between"
+                        style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
+                        <span>
+                            Contact Us
+                        </span>
+                        <div className="w-[1rem]"></div>
+                        <img src="./img/main/white_arrow_right.png" className="cover" />
+                    </button>
+                </div>
+
             </div>
         </div>
     );
