@@ -1,20 +1,18 @@
 import { useState } from "react";
+import {NavLink} from "react-router-dom";
 
-const Header = ({ activeSection }) => {
+const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleMenuClick = (section) => {
-    document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
-    <div className="lg:h-20 fixed top-0 left-0 w-full z-50 h-[3.5rem] bg-[rgba(255,255,255,0.6)] backdrop-blur-xl">
+    <div className="lg:h-20 fixed top-0 left-0 w-full z-50 h-[3.5rem] bg-[rgba(255,255,255, 0.7)] backdrop-blur-xl">
       <div className="lg:px-[6.25rem] md:px-8 px-5 text-adb_menu flex h-full items-center justify-between">
         {/* 로고 */}
         <div className="lg:w-[8.75rem] md:w-[9.125rem] w-[8rem]">
-          <button onClick={() => handleMenuClick("home")}>
+          <NavLink to="/">
             <img src="./img/AdBooster_logo.png" alt="AdBooster Logo" />
-          </button>
+          </NavLink>
         </div>
 
         {/* 모바일 메뉴 아이콘 */}
@@ -39,40 +37,40 @@ const Header = ({ activeSection }) => {
         >
           <ul className="lg:flex md:flex lg:space-x-6 md:space-x-6 py-6 flex flex-col lg:flex-row md:flex-row items-center space-y-4 lg:space-y-0 md:space-y-0 p-0 m-0 text-adb_menu">
             <li>
-              <button
-                onClick={() => handleMenuClick("home")}
-                className={`transition-colors duration-300 ${
-                  activeSection === "home"
-                    ? "text-[#00217B] font-bold"
-                    : "text-adb_black"
-                }`}
+              <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                      `transition-colors duration-300 ${
+                          isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                      }`
+                  }
               >
                 서비스 소개
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button
-                onClick={() => handleMenuClick("curriculum")}
-                className={`transition-colors duration-300 ${
-                  activeSection === "curriculum"
-                    ? "text-[#00217B] font-bold"
-                    : "text-adb_black"
-                }`}
+              <NavLink
+                  to="/aso"
+                  className={({ isActive }) =>
+                      `transition-colors duration-300 ${
+                          isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                      }`
+                  }
               >
                 ASO
-              </button>
+              </NavLink>
             </li>
             <li>
-              <button
-                onClick={() => handleMenuClick("information")}
-                className={`transition-colors duration-300 ${
-                  activeSection === "information"
-                    ? "text-[#00217B] font-bold"
-                    : "text-adb_black"
-                }`}
+              <NavLink
+                  to="/faq"
+                  className={({ isActive }) =>
+                      `transition-colors duration-300 ${
+                          isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                      }`
+                  }
               >
                 자주 묻는 질문
-              </button>
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -85,11 +83,13 @@ const Header = ({ activeSection }) => {
                     : "max-h-0 opacity-0 mt-0"
             } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
         >
-          <button
-              className="px-5 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple md:rounded-3xl rounded-3xl font-bold whitespace-nowrap"
-              style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
-            Contact Us
-          </button>
+          <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
+            <button
+                className="px-5 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple hover:bg-abd_purple_hover md:rounded-3xl rounded-3xl font-bold whitespace-nowrap"
+                style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
+              Contact Us
+            </button>
+          </a>
         </div>
       </div>
     </div>

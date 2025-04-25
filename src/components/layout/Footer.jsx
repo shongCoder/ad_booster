@@ -12,7 +12,9 @@ const Footer = () => {
             <li className="text-adb_gray">|</li>
             <li>FAQ</li>
           </ul>
-          <button className="px-4 py-2 border border-adb-gray rounded-[0.5rem] text-[0.875rem] text-adb_black">Contact Us</button>
+          <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
+            <button className="px-4 py-2 border border-adb-gray rounded-[0.5rem] text-[0.875rem] text-adb_black">Contact Us</button>
+          </a>
         </div>
         <div className="w-full h-[1px] bg-adb_gray mb-5"></div>
         <div className="font-normal text-[0.8125rem] flex justify-between items-center">

@@ -19,7 +19,7 @@ function MainComponent() {
     return (
         <div>
             <div className="lg:w-full md:w-full w-full">
-                <div className="w-full h-auto bg-[url('/img/main/background_img.png')] bg-cover bg-center">
+                <div className="w-full h-[1400px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
                     <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center items-center">
                         <div className="md:pt-40 pt-20 pb-[40rem] w-full text-center">
                             <p className="text-adb_purple mb-4 md:text-[1rem] text-[0.625rem]">
@@ -40,9 +40,11 @@ function MainComponent() {
                                 </p>
                             </div>
                             <div className="mt-10">
-                                <button className="py-4 px-14 bg-adb_blue text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
-                                    문의하기
-                                </button>
+                                <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
+                                    <button className="py-4 px-14 bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
+                                        문의하기
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -222,7 +224,7 @@ function MainComponent() {
                 </div>
                 {/* Carousel */}
 
-                <div className="w-full flex flex-col justify-center items-center md:py-[3.75rem] py-10 md:px-8 px-5 bg-[url('/img/main/gradient.png')] bg-cover bg-center bg-no-repeat">
+                <div className="w-full flex flex-col justify-center items-center md:py-[3.75rem] py-10 md:px-8 px-5 bg-[url('/img/main/gradient.png')] bg-[length:100%_100%] bg-center bg-no-repeat">
                     <div className="lg:w-[70rem] md:w-full w-full">
                         <div className="font-play text-center font-black text-[2.5rem] text-adb_black transform scale-y-95 mb-3">
                             <p>Easily top-ranked</p>
@@ -230,15 +232,17 @@ function MainComponent() {
                         </div>
                         <p className="text-adb_text text-center">App Store/Google Play의 모든 검색 결과에서 상단에 위치한 앱을 쉽게 찾을 수 있습니다.</p>
                     </div>
-                    <button
-                        className="px-5 mt-10 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple md:rounded-3xl rounded-3xl font-bold whitespace-nowrap flex items-center justify-between"
-                        style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
-                        <span>
-                            Contact Us
-                        </span>
-                        <div className="w-[1rem]"></div>
-                        <img src="./img/main/white_arrow_right.png" className="cover" />
-                    </button>
+                    <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
+                        <button
+                            className="px-5 mt-10 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple hover:bg-abd_purple_hover md:rounded-3xl rounded-3xl font-bold whitespace-nowrap flex items-center justify-between"
+                            style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
+                            <span>
+                                Contact Us
+                            </span>
+                            <div className="w-[1rem]"></div>
+                            <img src="./img/main/white_arrow_right.png" className="cover" />
+                        </button>
+                    </a>
                 </div>
 
             </div>
