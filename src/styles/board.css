@@ -16,3 +16,12 @@ h3 {
 #board ul li {
     margin-bottom: 0.5rem;
 }
+
+#board strong {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#board a {
+    color: #1956FE;
+}

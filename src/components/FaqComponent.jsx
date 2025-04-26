@@ -104,7 +104,71 @@ function FaqComponent() {
                                     키워드 설치 관련 자주 묻는 질문
                                 </li>
 
-                                {/* 나머지 li들도 같은 패턴으로 */}
+                                <li
+                                    onClick={() => handleFileNameChange("review_optimization.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "review_optimization.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    평점 및 리뷰 최적화
+                                </li>
+
+                                <li
+                                    onClick={() => handleFileNameChange("app_fast.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "app_fast.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    AppFast 계정 설정
+                                </li>
+
+                                <li
+                                    onClick={() => handleFileNameChange("app_package.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "app_package.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    앱 패키지 설치
+                                </li>
+
+                                <li
+                                    onClick={() => handleFileNameChange("promotion_result.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "promotion_result.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    프로모션 결과 보장
+                                </li>
+
+                                <li
+                                    onClick={() => handleFileNameChange("payment.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "payment.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    결제 관련
+                                </li>
+
+                                <li
+                                    onClick={() => handleFileNameChange("refund.json")}
+                                    className={`cursor-pointer relative mt-7 ${
+                                        activeMenu === "refund.json"
+                                            ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
+                                            : "text-adb_text"
+                                    }`}
+                                >
+                                    환불
+                                </li>
                             </ul>
                         </div>
                     </div>
