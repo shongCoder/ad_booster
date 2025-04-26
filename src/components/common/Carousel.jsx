@@ -1,42 +1,42 @@
-// src/components/Carousel.jsx
-import React, {useEffect, useMemo} from 'react';
-import useEmblaCarousel from 'embla-carousel-react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css';
 
 const Carousel = ({ items }) => {
-    const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: true,
-        align: 'center',
-        skipSnaps: false,
-    });
-
-    const extendedItems = useMemo(() => [...items, ...items, ...items], [items]);
-
-
-    useEffect(() => {
-        if (emblaApi) {
-            const centerIndex = Math.floor(extendedItems.length / 2);
-            emblaApi.scrollTo(centerIndex);
-        }
-    }, [emblaApi, extendedItems]);
-
     return (
-        <div className="overflow-hidden w-full" ref={emblaRef}>
-            <div className="flex">
-                {extendedItems.map((item, index) => (
-                    <div
-                        key={index}
-                        className="flex-[0_0_auto] mx-[20px] flex flex-col items-center justify-center"
-                    >
+        <Swiper
+            modules={[Autoplay]}
+            loop={true}
+            slidesPerView="auto"
+            spaceBetween={40}
+            centeredSlides={false}
+            freeMode={true}
+            freeModeMomentum={false}
+            speed={8000}
+            autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+            }}
+        >
+            {[...items, ...items].map((item, index) => (
+                <SwiperSlide
+                    key={index}
+                    style={{ width: 'auto' }}   // ✅ 슬라이드 하나하나 auto width
+                >
+                    <div className="mx-[20px] flex flex-col items-center justify-center">
                         <img
                             src={item.image}
                             alt={item.label}
                             className="w-[100px] h-[100px] object-cover"
                         />
-                        <p className="text-center text-[0.8125rem] font-semibold text-gray-800">{item.label}</p>
+                        <p className="text-center text-[0.8125rem] font-semibold text-gray-800">
+                            {item.label}
+                        </p>
                     </div>
-                ))}
-            </div>
-        </div>
+                </SwiperSlide>
+            ))}
+        </Swiper>
     );
 };
 
