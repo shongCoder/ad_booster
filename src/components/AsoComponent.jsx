@@ -1,3 +1,4 @@
+import {NavLink} from "react-router-dom";
 
 function AsoComponent() {
     return (
@@ -29,8 +30,16 @@ function AsoComponent() {
 
             <div className="w-full border-b border-adb_gray flex justify-center items-center text-[1.125rem] pb-3">
                 <ul className="flex gap-7">
-                    <li className="text-adb_black font-bold relative after:absolute after:content-[''] after:w-[2.375rem] after:h-[3px] after:left-0 after:bottom-[-0.8rem] after:bg-adb_black ">ASO</li>
-                    <li className="text-[#c1c1c1]">자주 묻는 질문</li>
+                    <li className="text-adb_black font-bold relative after:absolute after:content-[''] after:w-[2.375rem] after:h-[3px] after:left-0 after:bottom-[-0.8rem] after:bg-adb_black ">
+                        <NavLink to="/aso">
+                            ASO
+                        </NavLink>
+                    </li>
+                    <li className="text-[#c1c1c1]">
+                        <NavLink to="/app-marketing">
+                            자주 묻는 질문
+                        </NavLink>
+                    </li>
                 </ul>
             </div>
             {/* Sub Title */}

@@ -1,0 +1,18 @@
+h2 {
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#board ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem;
+}
+
+#board ul li {
+    margin-bottom: 0.5rem;
+}

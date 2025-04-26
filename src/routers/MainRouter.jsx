@@ -4,6 +4,7 @@ import LoadingComponent from "../components/common/LoadingComponent.jsx";
 
 const Main = lazy(() => import("../pages/MainPage"));
 const Aso = lazy(() => import("../pages/AsoPage"));
+const AppMarketing = lazy(() => import("../pages/FaqPage.jsx"));
 const Layout = lazy(() => import("../pages/layout/LayoutPage"));
 
 const Loading = <LoadingComponent />;
@@ -25,6 +26,14 @@ const mainRouter = createHashRouter([
         element: (
             <Suspense fallback={Loading}>
               <Aso />
+            </Suspense>
+        )
+      },
+      {
+        path: "/app-marketing",
+        element: (
+            <Suspense fallback={Loading}>
+              <AppMarketing />
             </Suspense>
         )
       },

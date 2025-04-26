@@ -13,6 +13,7 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
+    "axios": "^1.9.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^12.4.7",
     "gh-pages": "^6.3.0",

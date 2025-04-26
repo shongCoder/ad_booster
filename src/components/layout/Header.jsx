@@ -62,7 +62,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                  to="/faq"
+                  to="/app-marketing"
                   className={({ isActive }) =>
                       `transition-colors duration-300 ${
                           isActive ? "text-[#00217B] font-bold" : "text-adb_black"
