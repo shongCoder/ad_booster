@@ -1,0 +1,22 @@
+[
+  {
+    "title": "여러 개의 계정을 등록할 수 있나요?",
+    "content": "<div data-v-18a01d8b=\"\"><div class=\"blog-detail-info\">당신은&nbsp;<strong>하나</strong>의 계정만 생성할 수 있습니다. 보안 및 기타 이유로 인해 여러 계정을 허용하지 않습니다. 여러 계정이 정말 필요하다면, 먼저 저희에게 연락하여 정당한 이유나 설명을 제공해 주세요. 요청이 합리적이라면 예외를 고려하겠습니다.</div></div>"
+  },
+  {
+    "title": "계정 사용자 이름 또는 이메일을 변경/업데이트하는 방법은 무엇입니까?",
+    "content": "<div data-v-18a01d8b=\"\"><div class=\"blog-detail-info\">안타깝게도 계정의 사용자 이름이나 이메일은 변경하거나 업데이트할 수 없습니다. 계정을 등록할 때 이상적인 사용자 이름이나 이메일을 신중하게 선택해 주세요. 질문이 있는 경우 언제든지 온라인 지원 팀에 문의해 주세요.</div></div>"
+  },
+  {
+    "title": "같은 앱에 대해 여러 광고 시리즈를 실행할 수 있나요?",
+    "content": "<div data-v-18a01d8b=\"\"><div class=\"blog-detail-info\">네, 특정 국가 또는 여러 국가를 대상으로 하나의 앱에 대해 여러 광고 시리즈를 실행할 수 있습니다. 그러나 모든 광고 시리즈가 동시에 활성화되는 것은 아니며, 대기열에서 기다려야 합니다.</div></div>"
+  },
+  {
+    "title": "주문은 언제 시작되나요?",
+    "content": "<div data-v-18a01d8b=\"\"><div class=\"blog-detail-info\">주문을 제출하고 시작한 후 곧 실행됩니다. 구현에 약간의 지연이 발생하더라도 걱정하지 마세요. 귀하의 주문은 단순히 대기열에 있는 것입니다.</div></div>"
+  },
+  {
+    "title": "어떤 국가를 선택할 수 있나요?",
+    "content": "<div data-v-18a01d8b=\"\"><div class=\"blog-detail-info\">원하는 거의 모든 국가에 대해 설치를 선택할 수 있습니다. 현재 AppFast는 Android 및 iOS 플랫폼에 대해&nbsp;<strong>100개 이상의 국가</strong>에 서비스를 제공하고 있으며, 목록은 계속 확장되고 있습니다. 사용 가능한 국가 및 가격에 대한 구체적인 세부정보는 다음 링크를 방문하세요:&nbsp;<a class=\"break-word hover:text-super hover:decoration-super dark:hover:text-superDark dark:hover:decoration-superDark underline decoration-from-font underline-offset-1 transition-all duration-300\" href=\"https://www.appfast.com/en/price\" target=\"_blank\" rel=\"nofollow noopener\">AppFast 가격</a>.</div></div>"
+  }
+]
