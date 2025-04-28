@@ -20,6 +20,10 @@ function MainComponent() {
         <div>
             <div className="lg:w-full md:w-full w-full">
                 <div className="w-full h-[1200px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
+                    <div className="w-full z-50 absolute">
+                        <img src="./img/main/adb_web.gif"  className="w-full lg:block md:hidden hidden"/>
+                        <img src="./img/main/adb_tab.gif"  className="w-full lg:hidden md:block hidden"/>
+                    </div>
                     <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center">
                         <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] w-full text-center md:px-8 px-5">
                             <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] text-[0.75rem]">
