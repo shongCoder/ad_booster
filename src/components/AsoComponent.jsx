@@ -2,7 +2,7 @@ import {NavLink} from "react-router-dom";
 
 function AsoComponent() {
     return (
-        <div className="lg:mt-20 md-[3.5rem]">
+        <div className="lg:mt-20 md:mt-[3.5rem] mt-[6.25rem]">
             <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
                 <div
                     id="curriculum"

@@ -33,7 +33,7 @@ function BoardComponent({ fileName }) {
                 <div className="w-full">
                     {/* 아코디언 리스트 */}
                     {data.map((item, index) => (
-                        <div key={index} className={`border rounded-[1.25rem] px-6 py-8 mb-4
+                        <div key={index} className={`border rounded-[1.25rem] lg:px-6 md:px-4 px-4 lg:py-8 md:py-6 py-6 mb-4
                                         ${openIndex === index ? "border-[#1956FE0A] bg-[#1956FE05]" : "border-adb_gray"}
                                     `}>
                             {/* 제목 (클릭하면 해당 항목만 열리고 닫힘) */}
@@ -41,14 +41,14 @@ function BoardComponent({ fileName }) {
                                 onClick={() => toggleAccordion(index)}
                                 className="flex items-center justify-between cursor-pointer"
                             >
-                                            <span className={`text-left lg:text-[1.25rem] md:text-[1.25rem] text-[1.125rem] font-semibold
+                                            <span className={`text-left lg:text-[1.25rem] md:text-[0.875rem] text-[0.875rem] font-semibold
                                                 ${openIndex === index ? "text-adb_purple" : "text-adb_black"}
                                             `}>
                                               {item.title}
                                             </span>
                                 <img
                                     src={openIndex === index ? "./img/faq/minus.png" : "./img/faq/add.png"}
-                                    className={`lg:w-5 md:w-5 w-4 transition-transform duration-300 ${
+                                    className={`lg:w-5 md:w-4 md:w-5 w-4 transition-transform duration-300 ${
                                         openIndex === index ? "rotate-90" : "rotate-0"
                                     }`}
                                 />

@@ -1,11 +1,15 @@
-h2 {
-    font-size: 1.125rem;
+
+#board h3 {
     font-weight: 800;
 }
 
-h3 {
-    font-size: 1rem;
+#board h2 {
+    font-size: 0.8125rem; /* 기본 (모바일, 640px 미만) */
     font-weight: 800;
+}
+
+#board {
+    font-size: 0.75rem; /* 기본 (모바일, 640px 미만) */
 }
 
 #board ul {
@@ -24,4 +28,32 @@ h3 {
 
 #board a {
     color: #1956FE;
+}
+
+@media (min-width: 640px) {
+    #board h2 {
+        font-size: 0.8125rem; /* md (640px 이상) */
+    }
+
+    #board h3 {
+       font-size: 0.75rem; /* md (640px 이상) */
+    }
+
+    #board {
+        font-size: 0.75rem; /* md (640px 이상) */
+    }
+}
+
+@media (min-width: 1440px) {
+    #board h2 {
+        font-size: 1.125rem; /* lg (1440px 이상) */
+    }
+
+    #board h3 {
+        font-size: 1rem; /* lg (1440px 이상) */
+    }
+
+    #board {
+        font-size: 1rem; /* lg (1440px 이상) */
+    }
 }

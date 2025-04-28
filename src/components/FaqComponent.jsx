@@ -13,7 +13,7 @@ function FaqComponent() {
     }
 
     return (
-        <div className="lg:mt-20 md-[3.5rem]">
+        <div className="lg:mt-20 md:mt-[3.5rem] mt-[6.25rem]">
             <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
                 <div
                     id="curriculum"
@@ -21,16 +21,16 @@ function FaqComponent() {
                 >
                     <div className="flex md:justify-between md:flex-row flex-col md:items-end items-start">
                         <div>
-                            <p className="text-adb_blue md:text-[0.875rem] text-[0.75rem] font-extrabold tracking-widest">
+                            <p className="text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
                                 FAQ
                             </p>
-                            <div className="font-bold md:text-[2.25rem] text-[1.5rem] text-adb_black mt-5">
+                            <div className="font-bold lg:text-[2.25rem] md:text-[1.75rem] text-[1.75rem] text-adb_black mt-5">
                                 <p>
                                     자주 묻는 질문
                                 </p>
                             </div>
                         </div>
-                        <div className="md:text-right text-left text-adb_text md:text-[1rem] text-[0.8125rem] font-medium">
+                        <div className="md:text-right text-left text-adb_text lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem] font-medium">
                             <p>문의 전, 자주 묻는 질문에서 빠르게 해결해보세요.</p>
                             <p>더 궁금하신 점은 문의하기로 연락주세요.</p>
                         </div>
@@ -39,7 +39,7 @@ function FaqComponent() {
             </div>
             {/* ASO Title */}
 
-            <div className="w-full border-b border-adb_gray flex justify-center items-center text-[1.125rem] pb-3">
+            <div className="w-full border-b border-adb_gray flex justify-center items-center lg:text-[1.125rem] md:text-[0.875rem] pb-3">
                 <ul className="flex gap-7">
                     <li className="text-[#c1c1c1]">
                         <NavLink to="/aso">
@@ -56,9 +56,9 @@ function FaqComponent() {
             {/* Sub Title */}
 
             <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
-                <div className="flex gap-10 lg:w-[70rem] md:w-full w-full">
+                <div className="flex md:flex-row flex-col gap-10 lg:w-[70rem] md:w-full w-full">
                     <div className="flex-[1] ">
-                        <div>
+                        <div className="lg:block md:hidden hidden">
                             <p className="text-adb_blue md:text-[0.875rem] text-[0.75rem] font-extrabold tracking-widest">
                                 FAQ
                             </p>
@@ -71,7 +71,7 @@ function FaqComponent() {
                                 </p>
                             </div>
                         </div>
-                        <div className="mt-10 flex">
+                        <div className="lg:mt-10 md:mt-0 flex">
                             <div
                                 className="w-[2px] mr-3 mt-8 min-h-full"
                                 style={{
@@ -84,7 +84,7 @@ function FaqComponent() {
                             <ul>
                                 <li
                                     onClick={() => handleFileNameChange("app_marketing.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_marketing.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -95,7 +95,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("keyword_install.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "keyword_install.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -106,7 +106,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("review_optimization.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "review_optimization.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -117,7 +117,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("app_fast.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_fast.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -128,7 +128,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("app_package.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_package.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -139,7 +139,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("promotion_result.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "promotion_result.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -150,7 +150,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("payment.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "payment.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -161,7 +161,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("refund.json")}
-                                    className={`cursor-pointer relative mt-7 ${
+                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "refund.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
