@@ -11,7 +11,10 @@ const LayoutPage = () => {
       <Outlet />
 
       <Footer />
-      <TopButton />
+      <div className="md:block hidden">
+          <TopButton />
+      </div>
+
     </div>
   );
 };

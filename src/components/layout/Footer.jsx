@@ -17,8 +17,8 @@ const Footer = () => {
           </a>
         </div>
         <div className="w-full h-[1px] bg-adb_gray mb-5"></div>
-        <div className="font-normal text-[0.8125rem] flex justify-between items-center">
-          <p>Copyright © <span className="font-bold">Adcrack.</span> All rights reserved.</p>
+        <div className="font-normal text-[0.8125rem] flex md:flex-row flex-col-reverse justify-between items-center">
+          <p className="md:mt-0 mt-5">Copyright © <span className="font-bold">Adcrack.</span> All rights reserved.</p>
           <ul className="flex gap-8 font-bold">
             <li>Privacy policy</li>
             <li>Terms of services</li>
