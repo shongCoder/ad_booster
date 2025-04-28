@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* 모바일 메뉴 아이콘 */}
         <div
-            className="lg:hidden md:hidden ml-auto w-5 m-0"
+            className="lg:hidden md:hidden ml-auto w-9 m-0"
             onClick={() => setIsOpen(!isOpen)}
         >
           <img
