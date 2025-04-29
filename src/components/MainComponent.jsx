@@ -19,14 +19,11 @@ function MainComponent() {
     return (
         <div>
             <div className="lg:w-full md:w-full w-full">
-                <div className="w-full h-[1200px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
-                    <div className="w-full z-[100] absolute">
-                        <img src="./img/main/adb_web.gif"  className="w-full lg:block md:hidden hidden"/>
-                        <img src="./img/main/adb_tab.gif"  className="w-full lg:hidden md:block hidden"/>
-                    </div>
-                    <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center">
-                        <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] absolute w-full text-center">
-                            <div className="w-full md:px-8 px-5 z-[150]">
+                <div className="relative w-full h-[1200px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
+                    <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center relative">
+
+                        <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] absolute w-full text-center z-[30]">
+                            <div className="w-full md:px-8 px-5">
                                 <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] font-semibold text-[0.75rem]">
                                     국내 구글스토어에 최적화된 앱 마케팅 솔루션
                                 </p>
@@ -53,15 +50,23 @@ function MainComponent() {
                                 </div>
                             </div>
                             <div className="relative w-full flex justify-center items-center mt-10">
-                                <img src="./img/main/phone.png" className="relative z-[10] md:w-[393px] w-full md:px-0 px-14" />
+                                {/* phone 이미지 */}
+                                <img src="./img/main/phone.png" className="relative z-[5] md:w-[393px] w-full md:px-0 px-14" />
 
-                                {/* 1. 아래 50% 완전 화이트 덮기 */}
-                                <div className="absolute bottom-0 left-0 w-full h-1/3 bg-white z-[50]"></div>
+                                {/* 흰색 box */}
+                                <div className="absolute bottom-0 left-0 w-full h-1/3 bg-white z-[10]"></div>
 
-                                {/* 2. 그 위에 부드럽게 투명해지는 그라데이션 */}
-                                <div id="dd" className="absolute bottom-1/3 left-0 w-full h-1/4 bg-gradient-to-t from-white to-transparent z-[50]"></div>
+                                {/* gradient */}
+                                <div id="dd" className="absolute bottom-1/3 left-0 w-full h-1/4 bg-gradient-to-t from-white to-transparent z-[10]"></div>
                             </div>
                         </div>
+
+                        {/* GIF */}
+                        <div className="w-full z-[5] absolute top-0">
+                            <img src="./img/main/adb_web.gif"  className="w-full lg:block md:hidden hidden" />
+                            <img src="./img/main/adb_tab.gif"  className="w-full lg:hidden md:block hidden" />
+                        </div>
+
                     </div>
                 </div>
                 {/* 메인 비주얼 */}
