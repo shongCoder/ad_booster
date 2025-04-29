@@ -55,7 +55,7 @@ function BoardComponent({ fileName }) {
                             </div>
 
                             {/* 내용 (해당 항목이 열렸을 때만 표시) */}
-                            <div className="text-adb_text text-[0.875rem]"
+                            <div className="text-[#666666] text-[0.875rem]"
                                  ref={(el) => (contentRefs.current[index] = el)}
                                  style={{
                                      maxHeight: openIndex === index ? `${contentRefs.current[index]?.scrollHeight}px` : "0px",

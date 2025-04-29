@@ -139,7 +139,7 @@ function AsoComponent() {
                             href="https://t.me/AD_Crack"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="block w-full py-4 md:w-[139px] bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-center lg:mt-0 md:mt-0 mt-5"
+                            className="block w-full font-bold py-4 md:w-[139px] bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-center lg:mt-0 md:mt-0 mt-5"
                         >
                             상담 문의
                         </a>

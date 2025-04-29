@@ -42,7 +42,7 @@ const Header = () => {
                     onClick={() => {setIsOpen(!isOpen)}}
                     className={({ isActive }) =>
                         `transition-colors duration-300 ${
-                            isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                            isActive ? "text-[#00217B] font-bold" : "text-adb_black font-semibold"
                         }`
                     }
                 >
@@ -55,7 +55,7 @@ const Header = () => {
                     onClick={() => {setIsOpen(!isOpen)}}
                     className={({ isActive }) =>
                         `transition-colors duration-300 ${
-                            isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                            isActive ? "text-[#00217B] font-bold" : "text-adb_black font-semibold"
                         }`
                     }
                 >
@@ -64,11 +64,11 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                    to="/app-marketing"
+                    to="/faq"
                     onClick={() => {setIsOpen(!isOpen)}}
                     className={({ isActive }) =>
                         `transition-colors duration-300 ${
-                            isActive ? "text-[#00217B] font-bold" : "text-adb_black"
+                            isActive ? "text-[#00217B] font-bold" : "text-adb_black font-semibold"
                         }`
                     }
                 >

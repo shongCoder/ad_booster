@@ -84,7 +84,7 @@ function FaqComponent() {
                             <ul>
                                 <li
                                     onClick={() => handleFileNameChange("app_marketing.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_marketing.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -95,7 +95,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("keyword_install.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "keyword_install.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -106,7 +106,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("review_optimization.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "review_optimization.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -117,7 +117,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("app_fast.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_fast.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -128,7 +128,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("app_package.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "app_package.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -139,7 +139,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("promotion_result.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "promotion_result.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -150,7 +150,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("payment.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "payment.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"
@@ -161,7 +161,7 @@ function FaqComponent() {
 
                                 <li
                                     onClick={() => handleFileNameChange("refund.json")}
-                                    className={`cursor-pointer relative mt-7 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
+                                    className={`cursor-pointer relative mt-5 lg:text-[1rem] md:text-[0.875rem] text-[0.875rem] ${
                                         activeMenu === "refund.json"
                                             ? "text-adb_black font-semibold before:absolute before:left-[-0.9rem] before:top-1/2 before:translate-y-[-50%] before:w-[2.5px] before:h-6 before:bg-adb_blue before:rounded-xl"
                                             : "text-adb_text"

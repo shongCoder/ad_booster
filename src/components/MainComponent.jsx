@@ -26,7 +26,7 @@ function MainComponent() {
                     </div>
                     <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center">
                         <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] w-full text-center md:px-8 px-5">
-                            <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] text-[0.75rem]">
+                            <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] font-semibold text-[0.75rem]">
                                 국내 구글스토어에 최적화된 앱 마케팅 솔루션
                             </p>
                             <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
@@ -45,7 +45,7 @@ function MainComponent() {
                             </div>
                             <div className="mt-10">
                                 <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
-                                    <button className="py-4 px-14 bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
+                                    <button className="py-4 px-14 font-bold bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                                         문의하기
                                     </button>
                                 </a>
@@ -100,7 +100,7 @@ function MainComponent() {
                     {/* About Title */}
 
                     <div className="w-full flex flex-col justify-center items-center md:mb-20 mb-9 md:px-8 px-5">
-                        <div className="lg:w-[70rem] md:w-full w -full">
+                        <div className="lg:w-[70rem] md:w-full w-full">
                             <div className="md:flex block lg:gap-5 md:gap-4 w-full md:mb-5 mb-3">
                                 <div className="flex-1 flex justify-between flex-col lg:h-[21.25rem] md:h-[19rem] md:mb-0 mb-3 lg:p-8 md:p-8 p-5 rounded-[1.25rem] bg-gradient-to-br from-[#275CFD] to-[#3A40FE] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                                     <p className="text-[#C8C8C8] font-play lg:text-[1rem] md:text-[0.6875rem] text-[0.6875rem] font-bold tracking-[0.12rem]">APP GROWTH KEYWORD</p>
