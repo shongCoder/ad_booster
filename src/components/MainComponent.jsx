@@ -20,51 +20,53 @@ function MainComponent() {
         <div>
             <div className="lg:w-full md:w-full w-full">
                 <div className="w-full h-[1200px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
-                    <div className="w-full z-50 absolute">
+                    <div className="w-full z-[100] absolute">
                         <img src="./img/main/adb_web.gif"  className="w-full lg:block md:hidden hidden"/>
                         <img src="./img/main/adb_tab.gif"  className="w-full lg:hidden md:block hidden"/>
                     </div>
                     <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center">
-                        <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] w-full text-center md:px-8 px-5">
-                            <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] font-semibold text-[0.75rem]">
-                                국내 구글스토어에 최적화된 앱 마케팅 솔루션
-                            </p>
-                            <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
-                                앱 상위 노출,
-                            </p>
-                            <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
-                                더 이상 고민하지 마세요
-                            </p>
-                            <div className="text-adb_text lg:text-[1.125rem] md:text-[1rem] text-[0.8125rem]">
-                                <p className="md:block inline">
-                                    해외 솔루션과 달리, ASO 12년 경험의 구글코리아 출신 마스터 개발자가
+                        <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] absolute w-full text-center">
+                            <div className="w-full md:px-8 px-5 z-[150]">
+                                <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] font-semibold text-[0.75rem]">
+                                    국내 구글스토어에 최적화된 앱 마케팅 솔루션
                                 </p>
-                                <p className="md:block inline">
-                                    직접 설계하여 국내 환경에 완벽히 맞췄습니다.
+                                <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
+                                    앱 상위 노출,
                                 </p>
-                            </div>
-                            <div className="mt-10">
-                                <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
-                                    <button className="py-4 px-14 font-bold bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
-                                        문의하기
-                                    </button>
-                                </a>
+                                <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
+                                    더 이상 고민하지 마세요
+                                </p>
+                                <div className="text-adb_text lg:text-[1.125rem] md:text-[1rem] text-[0.8125rem]">
+                                    <p className="md:block inline">
+                                        해외 솔루션과 달리, ASO 12년 경험의 구글코리아 출신 마스터 개발자가
+                                    </p>
+                                    <p className="md:block inline">
+                                        직접 설계하여 국내 환경에 완벽히 맞췄습니다.
+                                    </p>
+                                </div>
+                                <div className="mt-10">
+                                    <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
+                                        <button className="py-4 px-14 font-bold bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
+                                            문의하기
+                                        </button>
+                                    </a>
+                                </div>
                             </div>
                             <div className="relative w-full flex justify-center items-center mt-10">
-                                <img src="./img/main/phone.png" className="relative z-0" />
+                                <img src="./img/main/phone.png" className="relative z-[10] md:w-[393px] w-full md:px-0 px-14" />
 
                                 {/* 1. 아래 50% 완전 화이트 덮기 */}
-                                <div className="absolute bottom-0 left-0 w-full h-1/2 bg-white z-10"></div>
+                                <div className="absolute bottom-0 left-0 w-full h-1/3 bg-white z-[50]"></div>
 
                                 {/* 2. 그 위에 부드럽게 투명해지는 그라데이션 */}
-                                <div className="absolute bottom-1/2 left-0 w-full h-1/2 bg-gradient-to-t from-white to-transparent z-10"></div>
+                                <div id="dd" className="absolute bottom-1/3 left-0 w-full h-1/4 bg-gradient-to-t from-white to-transparent z-[50]"></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 {/* 메인 비주얼 */}
 
-                <div className="relative absolute w-full z-20">
+                <div className="relative absolute w-full z-[200]">
                     <div className="flex justify-center items-center md:mb-[3.75rem] mb-0">
                         <img src="./img/main/dashed_line.png" alt="dashed line" />
                     </div>

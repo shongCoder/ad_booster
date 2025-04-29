@@ -5,7 +5,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="lg:h-20 fixed top-0 left-0 w-full z-[150] h-[3.5rem] bg-[rgba(255,255,255, 0.9)] md:px-8 px-5 backdrop-blur-3xl">
+    <div className="lg:h-20 fixed top-0 left-0 w-full z-[300] h-[3.5rem] bg-[rgba(255,255,255, 0.9)] md:px-8 px-5 backdrop-blur-3xl">
       <div className="w-full h-full flex flex-col justify-center items-center">
         <div className="lg:w-[70rem] md:w-full w-full  text-adb_menu flex h-full items-center justify-between">
           {/* 로고 */}

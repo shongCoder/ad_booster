@@ -36,7 +36,7 @@ function AsoComponent() {
                         </NavLink>
                     </li>
                     <li className="text-[#c1c1c1]">
-                        <NavLink to="/app-marketing">
+                        <NavLink to="/faq">
                             자주 묻는 질문
                         </NavLink>
                     </li>

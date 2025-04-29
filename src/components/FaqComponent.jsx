@@ -13,15 +13,15 @@ function FaqComponent() {
     }
 
     return (
-        <div className="lg:mt-20 md:mt-[3.5rem] mt-[6.25rem]">
-            <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
+        <div className="lg:mt-20 md:mt-[3.5rem] mt-[6.25rem] min-h-screen">
+            <div className="w-full flex justify-center items-start md:py-[6.25rem] py-10 md:px-8 px-5">
                 <div
                     id="curriculum"
                     className="lg:w-[70rem] md:w-full w-full"
                 >
                     <div className="flex md:justify-between md:flex-row flex-col md:items-end items-start">
                         <div>
-                            <p className="font-play text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
+                            <p className="font-play text-adb_blue lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
                                 FAQ
                             </p>
                             <div className="font-bold lg:text-[2.25rem] md:text-[1.75rem] text-[1.75rem] text-adb_black mt-5">
@@ -47,7 +47,7 @@ function FaqComponent() {
                         </NavLink>
                     </li>
                     <li className=" text-adb_black font-bold relative after:absolute after:content-[''] after:w-[6.375rem] after:h-[3px] after:left-0 after:bottom-[-0.8rem] after:bg-adb_black">
-                        <NavLink to="/app-marketing">
+                        <NavLink to="/faq">
                             자주 묻는 질문
                         </NavLink>
                     </li>
@@ -56,8 +56,8 @@ function FaqComponent() {
             {/* Sub Title */}
 
             <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
-                <div className="flex md:flex-row flex-col gap-10 lg:w-[70rem] md:w-full w-full">
-                    <div className="flex-[1] ">
+                <div className="relative overflow-visible flex md:flex-row flex-col gap-10 lg:w-[70rem] md:w-full w-full">
+                    <div className="flex-[1] md:sticky top-32 self-start h-fit">
                         <div className="lg:block md:hidden hidden">
                             <p className="text-adb_blue md:text-[0.875rem] text-[0.75rem] font-extrabold tracking-widest">
                                 FAQ
