@@ -77,7 +77,7 @@ function MainComponent() {
                         >
                             <div className="flex md:justify-between md:flex-row flex-col md:items-end items-start">
                                 <div>
-                                    <p className="text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
+                                    <p className="font-play text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
                                         ABOUT
                                     </p>
                                     <div className="font-bold lg:text-[2.25rem] md:text-[1.75rem] text-[1.5rem] text-adb_black mt-3 md:mb-0 mb-5">
@@ -173,7 +173,7 @@ function MainComponent() {
                         >
                             <div className="flex md:justify-between md:flex-row flex-col md:items-end items-start">
                                 <div>
-                                    <p className="text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
+                                    <p className="font-play text-adb_blue lg:text-[0.875rem] md:text-[0.8125rem] text-[0.8125rem] font-extrabold tracking-widest">
                                         SUCCESS STORY
                                     </p>
                                     <div className="font-bold lg:text-[2.25rem] md:text-[1.75rem] text-[1.5rem] text-adb_black mt-3 md:mb-0 mb-5">
