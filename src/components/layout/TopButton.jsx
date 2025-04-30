@@ -18,7 +18,7 @@ function TopButton() {
 
   return (
     <div
-      className={`fixed bottom-6 right-6 z-[100] w-12 h-12 bg-adb_black rounded-full shadow-[0px_0px_100px_#3631BD] flex items-center justify-center cursor-pointer 
+      className={`fixed bottom-6 right-6 z-[300] w-12 h-12 bg-adb_black rounded-full shadow-[0px_0px_100px_#3631BD] flex items-center justify-center cursor-pointer 
                 transition-all duration-300 transform ${
                   isVisible
                     ? "opacity-100 translate-y-0"
