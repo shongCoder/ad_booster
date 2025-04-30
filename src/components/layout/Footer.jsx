@@ -16,7 +16,7 @@ const Footer = () => {
             </li>
             <li className="text-adb_gray">|</li>
             <li>
-              <NavLink to="/faq">faq</NavLink>
+              <NavLink to="/faq">FAQ</NavLink>
             </li>
           </ul>
           <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
