@@ -19,7 +19,7 @@ function MainComponent() {
     return (
         <div>
             <div className="lg:w-full md:w-full w-full">
-                <div className="relative w-full h-[1200px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
+                <div className="relative w-full lg:h-[1200px] md:h-[1200px] h-[1000px] bg-[url('/img/main/background_img.png')] bg-cover bg-top">
                     <div className="w-full h-full bg-gradient-to-b from-gray-100 to-transparent bg-[length:100%_13%] bg-no-repeat flex justify-center relative">
 
                         <div className="lg:pt-40 md:pt-40 pt-40 pb-[40rem] absolute w-full text-center z-[50]">
@@ -27,7 +27,7 @@ function MainComponent() {
                                 <p className="text-adb_purple mb-4 lg:text-[1rem] md:text-[0.875rem] font-semibold text-[0.75rem]">
                                     국내 구글스토어에 최적화된 앱 마케팅 솔루션
                                 </p>
-                                <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
+                                <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black md:mb-2 mb-0">
                                     앱 상위 노출,
                                 </p>
                                 <p className="lg:text-[3rem] md:text-[2.75rem] text-[1.75rem] font-bold text-adb_black mb-2">
@@ -50,14 +50,16 @@ function MainComponent() {
                                 </div>
                             </div>
                             <div className="relative w-full flex justify-center items-center mt-10">
-                                {/* phone 이미지 */}
-                                <img src="./img/main/phone.png" className="relative z-[5] md:w-[393px] w-full md:px-0 px-14" />
+                                <video className="relative absolute z-[4] md:w-[380px] w-full md:px-0 px-14" autoPlay muted loop playsInline>
+                                    <source src="./img/main/movie.mp4" type="video/mp4"/>
+                                </video>
 
                                 {/* 흰색 box */}
                                 <div className="absolute bottom-0 left-0 w-full h-1/3 bg-white z-[10]"></div>
 
                                 {/* gradient */}
-                                <div id="dd" className="absolute bottom-1/3 left-0 w-full h-1/4 bg-gradient-to-t from-white to-transparent z-[10]"></div>
+                                <div id="dd"
+                                     className="absolute bottom-1/3 left-0 w-full h-1/4 bg-gradient-to-t from-white to-transparent z-[10]"></div>
                             </div>
                         </div>
 
@@ -111,9 +113,9 @@ function MainComponent() {
                             <div className="md:flex block lg:gap-5 md:gap-4 w-full md:mb-5 mb-3">
                                 <div className="flex-1 flex justify-between flex-col lg:h-[21.25rem] md:h-[19rem] md:mb-0 mb-3 lg:p-8 md:p-8 p-5 rounded-[1.25rem] bg-gradient-to-br from-[#275CFD] to-[#3A40FE] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                                     <p className="text-[#C8C8C8] font-play lg:text-[1rem] md:text-[0.6875rem] text-[0.6875rem] font-bold tracking-[0.12rem]">APP GROWTH KEYWORD</p>
-                                    <div className="flex justify-between items-end">
+                                    <div className="flex justify-between items-end lg:mt-0 md:mt-0 mt-5">
                                         <div className="text-white md:w-auto w-[50%]">
-                                            <p className="lg:text-[1.5rem] md:text-[1.125rem] font-bold mb-3">앱 성공의 시작,<br/>유저 다운로드 확보</p>
+                                            <p className="lg:text-[1.5rem] md:text-[1.125rem] text-[1.125rem] font-bold mb-3">앱 성공의 시작,<br/>유저 다운로드 확보</p>
                                             <p className="lg:text-[1rem] md:text-[0.75rem] text-[0.75rem] text-[#C8C8C8]">높은 다운로드는 더 높은 노출로 이어집니다.<br/>애드크랙은 스토어 1위에 목표로 움직입니다.</p>
                                         </div>
                                         <div>
@@ -125,20 +127,20 @@ function MainComponent() {
                                     <div className="flex lg:gap-5 md:gap-4 gap-3 lg:mb-5 md:mb-4 mb-4 lg:h-[10rem] md:h-[9rem] h-[7.5rem]">
                                         <div className="bg-adb_light_gray flex-1 flex flex-col justify-center items-center rounded-[1.25rem] border border-adb_gray">
                                             <p className="lg:text-[2.75rem] md:text-[2.25rem] text-[2.25rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#376AFB] to-[#6822FE]">
-                                                70<span className="text-[1.25rem]">%</span>
+                                                70<span className="lg:text-[1.25rem] md:text-[1rem] text-[1rem]">%</span>
                                             </p>
                                             <p className="text-adb_black font-bold lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem]">앱 다운로드 중 검색 비율</p>
                                         </div>
                                         <div className="bg-adb_light_gray flex-1 flex flex-col justify-center items-center rounded-[1.25rem] border border-adb_gray">
                                             <p className="lg:text-[2.75rem] md:text-[2.25rem] text-[2.25rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#376AFB] to-[#6822FE]">
-                                                89<span className="text-[1.25rem]">%</span>
+                                                89<span className="lg:text-[1.25rem] md:text-[1rem] text-[1rem]">%</span>
                                             </p>
                                             <p className="text-adb_black font-bold lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem]">상위 10개 플랫폼 점유율</p>
                                         </div>
                                     </div>
                                     <div className="bg-adb_light_gray flex-1 lg:h-[10rem] md:h-[9rem] h-[7.5rem] flex flex-col justify-center items-center rounded-[1.25rem] border border-adb_gray">
                                         <p className="lg:text-[2.75rem] md:text-[2.25rem] text-[2.25rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#376AFB] to-[#6822FE]">
-                                            427,451<span className="text-[1.25rem]">프로젝트</span>
+                                            427,451<span className="lg:text-[1.25rem] md:text-[1rem] text-[1rem]">프로젝트</span>
                                         </p>
                                         <p className="text-adb_black font-bold lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem]">애드부스터와 함께한 프로젝트</p>
                                     </div>
@@ -150,7 +152,7 @@ function MainComponent() {
                                     <div className="flex justify-between items-end">
                                         <div className="text-white md:w-auto w-[50%]">
                                             <p className="lg:text-[1.5rem] md:text-[1.125rem] text-[1.125rem] text-adb_black font-bold">보장된 순위,<br/>검증된 키워드 전략</p>
-                                            <p className="lg:text-[1rem] md:text-[0.75rem] text-[0.75rem] text-[#898D99]">정밀한 키워드 전략과 함께<br/>지정 순위 달성을 정가제로 보장합니다.</p>
+                                            <p className="lg:text-[1rem] md:text-[0.75rem] text-[0.75rem] text-[#898D99] lg:mt-0 md:mt-0 mt-3">정밀한 키워드 전략과 함께<br/>지정 순위 달성을 정가제로 보장합니다.</p>
                                         </div>
                                         <div>
                                             <img src="./img/main/winner.png" alt="rocket img" className="md:w-auto w-[120px]" />

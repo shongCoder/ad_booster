@@ -49,8 +49,8 @@ function AsoComponent() {
                     <div className="flex md:flex-row flex-col lg:gap-5 md:gap-3 gap-4">
                         <div className="flex-1 border border-adb_gray rounded-[0.75rem] lg:py-10 md:py-6 lg:px-5 md:px-3 py-8 px-4">
                             <div className="flex justify-center items-center flex-col gap-3">
-                                <div className="flex gap-1">
-                                    <img src="./img/aso/sparkles.png" />
+                                <div className="flex gap-1 items-center">
+                                    <img src="./img/aso/sparkles.png" className="lg:w-5 md:w-[0.75rem] w-5 lg:h-5 md:h-[0.75rem] h-5" />
                                     <span className="lg:text-[1.25rem] md:text-[0.875rem] text-[1.25rem] font-bold">Main Keywords</span>
                                 </div>
                                 <div className="text-adb_text text-center font-medium lg:text-[0.8125rem] md:text-[0.6875rem] text-[0.8125rem] h-8">
@@ -69,8 +69,8 @@ function AsoComponent() {
                         </div>
                         <div className="flex-1 border border-adb_gray rounded-[0.75rem] lg:py-10 md:py-6 lg:px-5 md:px-3 py-8 px-4">
                             <div className="flex justify-center items-center flex-col gap-3">
-                                <div className="flex gap-1">
-                                    <img src="./img/aso/sparkles.png" />
+                                <div className="flex gap-1 items-center">
+                                    <img src="./img/aso/sparkles.png" className="lg:w-5 md:w-[0.75rem] w-5 lg:h-5 md:h-[0.75rem] h-5" />
                                     <span className="lg:text-[1.25rem] md:text-[0.875rem] text-[1.25rem] font-bold">Sub Keywords</span>
                                 </div>
                                 <div className="text-adb_text text-center font-medium lg:text-[0.8125rem] md:text-[0.6875rem] text-[0.8125rem] h-8">
@@ -89,8 +89,8 @@ function AsoComponent() {
                         </div>
                         <div className="flex-1 border border-adb_gray rounded-[0.75rem] lg:py-10 md:py-6 lg:px-5 md:px-3 py-8 px-4">
                             <div className="flex justify-center items-center flex-col gap-3">
-                                <div className="flex gap-1">
-                                    <img src="./img/aso/sparkles.png" />
+                                <div className="flex gap-1 items-center">
+                                    <img src="./img/aso/sparkles.png" className="lg:w-5 md:w-[0.75rem] w-5 lg:h-5 md:h-[0.75rem] h-5" />
                                     <span className="lg:text-[1.25rem] md:text-[0.875rem] text-[1.25rem] font-bold">Long-tail Keywords</span>
                                 </div>
                                 <div className="text-adb_text text-center font-medium lg:text-[0.8125rem] md:text-[0.6875rem] text-[0.8125rem] h-8">
