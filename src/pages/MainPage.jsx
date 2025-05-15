@@ -1,10 +1,14 @@
 import MainComponent from "../components/MainComponent.jsx";
+import {Helmet} from "react-helmet";
 
 function MainPage() {
     return (
-        <div>
+        <>
+            <Helmet>
+                <title>AdBooster</title>
+            </Helmet>
             <MainComponent />
-        </div>
+        </>
     );
 }
 

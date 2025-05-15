@@ -1,10 +1,14 @@
 import AsoComponent from "../components/AsoComponent.jsx";
+import { Helmet } from 'react-helmet';
 
 function AsoPage() {
     return (
-        <div>
+        <>
+            <Helmet>
+                <title>ASO</title>
+            </Helmet>
             <AsoComponent />
-        </div>
+        </>
     );
 }
 

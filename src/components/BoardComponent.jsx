@@ -13,7 +13,7 @@ function BoardComponent({ fileName }) {
     useEffect(() => {
         if (!fileName) return;
 
-        axios.get(`/ad_booster/data/${fileName}`)
+        axios.get(`/data/${fileName}`)
             .then((response) => {
                 setData(response.data);
             })
