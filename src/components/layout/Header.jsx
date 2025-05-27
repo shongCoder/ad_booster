@@ -1,8 +1,19 @@
 import { useState } from "react";
 import {NavLink} from "react-router-dom";
+import useModalStore from "../../store/modalStore.js";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const openModal = useModalStore((state) => state.openModal);
+
+  const handleNavClick = (event) => {
+    setIsOpen(false);
+    event.preventDefault();
+    openModal(
+        "1:1 문의하기",
+        `궁금한 점이나 상담이 필요하신가요? \n친절하게 안내해 드리겠습니다.`
+    );
+  };
 
   return (
     <div className="lg:h-20 fixed top-0 left-0 w-full z-[300] h-[3.5rem] bg-[rgba(255,255,255, 0.9)] md:px-8 px-5 backdrop-blur-3xl">
@@ -86,13 +97,12 @@ const Header = () => {
                       : "max-h-0 opacity-0 mt-0"
               } lg:max-h-none lg:opacity-100 lg:mt-0 md:max-h-none md:opacity-100 md:mt-0`}
           >
-            <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
               <button
+                  onClick={handleNavClick}
                   className="px-5 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple hover:bg-abd_purple_hover md:rounded-3xl rounded-3xl font-bold whitespace-nowrap"
                   style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
                 Contact Us
               </button>
-            </a>
           </div>
         </div>
       </div>
