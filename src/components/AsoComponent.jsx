@@ -1,6 +1,21 @@
 import {NavLink} from "react-router-dom";
+import {useState} from "react";
+import useModalStore from "../store/modalStore.js";
 
 function AsoComponent() {
+
+    const [isOpen, setIsOpen] = useState(false);
+    const openModal = useModalStore((state) => state.openModal);
+
+    const handleNavClick = (event) => {
+        setIsOpen(false);
+        event.preventDefault();
+        openModal(
+            "1:1 문의하기",
+            `궁금한 점이나 상담이 필요하신가요? \n친절하게 안내해 드리겠습니다.`
+        );
+    };
+
     return (
         <div className="lg:mt-20 md:mt-[3.5rem] mt-[6.25rem]">
             <div className="w-full flex flex-col justify-center items-center md:py-[6.25rem] py-10 md:px-8 px-5">
@@ -135,14 +150,12 @@ function AsoComponent() {
                         </p>
                     </div>
                     <div className="md:w-auto w-full">
-                        <a
-                            href="https://t.me/AD_Crack"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <button
+                            onClick={handleNavClick}
                             className="block w-full font-bold py-4 md:w-[139px] bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)] text-center lg:mt-0 md:mt-0 mt-5"
                         >
                             상담 문의
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

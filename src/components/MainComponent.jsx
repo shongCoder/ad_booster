@@ -1,6 +1,10 @@
 import Carousel from "./common/Carousel.jsx";
+import {useState} from "react";
+import useModalStore from "../store/modalStore.js";
 
 function MainComponent() {
+    const [isOpen, setIsOpen] = useState(false);
+    const openModal = useModalStore((state) => state.openModal);
 
     const items = [
         { image: './img/main/carousel/carousel1.png', label: '엔터테인먼트' },
@@ -15,6 +19,15 @@ function MainComponent() {
         { image: './img/main/carousel/carousel10.png', label: '여행' },
         { image: './img/main/carousel/carousel11.png', label: '도서' },
     ];
+
+    const handleNavClick = (event) => {
+        setIsOpen(false);
+        event.preventDefault();
+        openModal(
+            "1:1 문의하기",
+            `궁금한 점이나 상담이 필요하신가요? \n친절하게 안내해 드리겠습니다.`
+        );
+    };
 
     return (
         <div>
@@ -42,11 +55,9 @@ function MainComponent() {
                                     </p>
                                 </div>
                                 <div className="mt-10">
-                                    <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
-                                        <button className="py-4 px-14 font-bold bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
+                                        <button onClick={handleNavClick} className="py-4 px-14 font-bold bg-adb_blue hover:bg-abd_blue_hover text-adb_white rounded-[2rem] shadow-[inset_4px_4px_14px_0_rgba(255,255,255,0.2)]">
                                             문의하기
                                         </button>
-                                    </a>
                                 </div>
                             </div>
                             <div className="relative w-full flex justify-center items-center mt-10">
@@ -255,8 +266,8 @@ function MainComponent() {
                             </div>
                             <p className="text-adb_text lg:text-[1rem] md:text-[0.8125rem] text-[0.8125rem] text-center">App Store/Google Play의 모든 검색 결과에서 상단에 위치한 앱을 쉽게 찾을 수 있습니다.</p>
                         </div>
-                        <a href="https://t.me/AD_Crack" target="_blank" rel="noopener noreferrer">
                             <button
+                                onClick={handleNavClick}
                                 className="px-5 mt-10 py-[0.625rem] font-play text-[1rem] text-adb_white shadow-inner bg-adb_purple hover:bg-abd_purple_hover md:rounded-3xl rounded-3xl font-bold whitespace-nowrap flex items-center justify-between"
                                 style={{boxShadow: 'inset 4px 4px 14px rgba(255, 255, 255, 0.2)'}}>
                             <span>
@@ -265,7 +276,6 @@ function MainComponent() {
                                 <div className="w-[1rem]"></div>
                                 <img src="./img/main/white_arrow_right.png" className="cover" />
                             </button>
-                        </a>
                     </div>
                 </div>
 
