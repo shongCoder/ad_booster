@@ -17,13 +17,13 @@ function ModalComponent() {
           <p className="text-center flex-1">{title}</p> {/* 중앙 정렬 */}
           <img
             onClick={handleClose}
-            src="./img/modal/icon-x-mono.png"
+            src="./img/modal/icon-x-mono.svg"
             className="ml-auto"
            alt="close" />
           {/* 완전 우측 끝 배치 */}
         </div>
         <div className="w-full flex justify-center items-center mt-3">
-          <img src="./img/modal/talk_icon.png" alt="talkIcon" className="md:w-20 w-[3.75rem]" />
+          <img src="./img/modal/talk_icon.svg" alt="talkIcon" className="md:w-20 w-[3.75rem]" />
         </div>
         <p className="lg:text-[1rem] md:text-[1rem] text-[0.8125rem] text-gray-600 mt-3 mb-3 whitespace-pre-line">
           {content}
@@ -34,7 +34,7 @@ function ModalComponent() {
                 onClick={handleClose}
                 className="flex items-center justify-center gap-1 mt-3 lg:text-[1rem] md:text-[1rem] text-[0.75rem] bg-[#FFE812] text-black font-bold lg:py-4 md:py-4 py-3 lg:rounded-[0.75rem] md:rounded-[0.75rem] rounded-[0.5rem] w-full"
             >
-              <img src="./img/modal/kakao.png" alt="kakao" className="md:h-5 h-4" />
+              <img src="./img/modal/kakao.svg" alt="kakao" className="md:h-5 h-4" />
               문의하기
             </button>
           </a>
@@ -43,7 +43,7 @@ function ModalComponent() {
                 onClick={handleClose}
                 className="flex items-center justify-center gap-1 mt-3 lg:text-[1rem] md:text-[1rem] text-[0.75rem] bg-[#2AABEE] text-white font-bold lg:py-4 md:py-4 py-3 lg:rounded-[0.75rem] md:rounded-[0.75rem] rounded-[0.5rem] w-full"
             >
-              <img src="./img/modal/tel.png" alt="tel" className="md:h-5 h-4" />
+              <img src="./img/modal/tel.svg" alt="tel" className="md:h-5 h-4" />
               문의하기
             </button>
           </a>
